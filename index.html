@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LAVO Laundry - Beranda</title>
+
+    <!-- Bootstrap Icons (optional, for footer social icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div w3-include-html="header.html"></div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">LAVO Laundry</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog.html">Katalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bayar.html">Bayar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+
+          <a href="bayar.html" class="btn btn-outline-light ms-lg-3"
+            >Order Sekarang</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero py-5">
+        <div class="container py-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-6">
+              <span class="badge rounded-pill badge-brand px-3 py-2 text-white"
+                >Laundry Cepat & Wangi</span
+              >
+              <h1 class="display-5 fw-bold mt-3">
+                Cuci bersih, lipat rapi, sampai tepat waktu.
+              </h1>
+              <p class="text-muted mt-3 mb-4">
+                LAVO Laundry melayani cucian harian dan ekspres. Pilih paket,
+                isi data bayar, dan kami proses.
+              </p>
+
+              <div class="d-flex flex-column flex-sm-row gap-2">
+                <a href="katalog.html" class="btn btn-primary btn-lg"
+                  >Lihat Katalog</a
+                >
+                <a href="kontak.html" class="btn btn-outline-dark btn-lg"
+                  >Kontak Kami</a
+                >
+              </div>
+
+              <div class="row g-3 mt-4">
+                <div class="col-6 col-md-4">
+                  <div class="card-feature p-3">
+                    <div class="fw-bold text-success">Gratis Jemput</div>
+                    <div class="text-muted small">Area tertentu</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card-feature p-3">
+                    <div class="fw-bold text-success">Wangi Tahan</div>
+                    <div class="text-muted small">Aroma premium</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card-feature p-3">
+                    <div class="fw-bold text-success">Lipat Rapi</div>
+                    <div class="text-muted small">Siap pakai</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="hero-card p-4 p-md-5">
+                <h3 class="fw-bold">Simulasi Order</h3>
+                <p class="text-muted mb-4">
+                  Buat order dengan cepat dalam 1 menit.
+                </p>
+
+                <div class="d-grid gap-3">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="badge rounded-pill text-bg-dark mt-1">1</div>
+                    <div>
+                      <div class="fw-semibold">Pilih Paket</div>
+                      <div class="text-muted small">
+                        Cuci, setrika, atau ekspres.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="badge rounded-pill text-bg-dark mt-1">2</div>
+                    <div>
+                      <div class="fw-semibold">Bayar & Kirim Data</div>
+                      <div class="text-muted small">
+                        Isi form nama, alamat, dan metode bayar.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="badge rounded-pill text-bg-dark mt-1">3</div>
+                    <div>
+                      <div class="fw-semibold">Konfirmasi</div>
+                      <div class="text-muted small">
+                        Petugas kami menghubungi Anda.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-4">
+                  <a href="bayar.html" class="btn btn-primary w-100"
+                    >Mulai Bayar</a
+                  >
+                </div>
+                <p class="text-muted small mt-2 mb-0">
+                  *Demo landing page (form tanpa integrasi pembayaran nyata).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Features -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="section-title h3 fw-bold mb-3">Kenapa LAVO Laundry?</h2>
+          <p class="text-muted mb-4">
+            Kualitas terjaga dari cuci sampai lipat.
+          </p>
+
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card card-feature p-4 h-100">
+                <div
+                  class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle"
+                >
+                  Proses Terukur
+                </div>
+                <h5 class="mt-3 fw-bold">Standar Kebersihan</h5>
+                <p class="text-muted mb-0">
+                  Deterjen & pewangi dipilih sesuai jenis kain.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card card-feature p-4 h-100">
+                <div
+                  class="badge bg-success-subtle text-success-emphasis border border-success-subtle"
+                >
+                  Ekspres
+                </div>
+                <h5 class="mt-3 fw-bold">Cepat Selesai</h5>
+                <p class="text-muted mb-0">
+                  Tersedia layanan kilat untuk kebutuhan mendesak.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card card-feature p-4 h-100">
+                <div
+                  class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle"
+                >
+                  Rapi
+                </div>
+                <h5 class="mt-3 fw-bold">Lipat & Setrika</h5>
+                <p class="text-muted mb-0">
+                  Hasil rapi, siap pakai saat diterima.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card card-feature p-4 h-100">
+                <div
+                  class="badge bg-info-subtle text-info-emphasis border border-info-subtle"
+                >
+                  Ramah
+                </div>
+                <h5 class="mt-3 fw-bold">Respon Cepat</h5>
+                <p class="text-muted mb-0">
+                  Admin akan membantu dari awal sampai konfirmasi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-8">
+              <h3 class="fw-bold mb-2">Siap pesan laundry hari ini?</h3>
+              <p class="text-muted mb-0">
+                Pilih paket terbaik dan lengkapi data pembayaran.
+              </p>
+            </div>
+            <div class="col-12 col-lg-4">
+              <a href="bayar.html" class="btn btn-primary btn-lg w-100"
+                >Bayar & Order</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-5">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-2">LAVO Laundry</h5>
+            <p class="text-muted mb-0">
+              Laundry bersih, wangi, dan rapi untuk harian maupun instan.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h6 class="fw-bold">Menu</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="katalog.html" class="footer-link">Katalog</a></li>
+              <li><a href="bayar.html" class="footer-link">Bayar</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h6 class="fw-bold">Kontak</h6>
+            <p class="text-muted mb-1">
+              WhatsApp: <a href="#" class="footer-link">0812-xxxx-xxxx</a>
+            </p>
+            <p class="text-muted mb-0">
+              Email: <a href="#" class="footer-link">hello@lavo-laundry.com</a>
+            </p>
+          </div>
+        </div>
+
+        <hr class="mt-4 mb-3" />
+
+        <div
+          class="d-flex flex-column flex-md-row gap-2 justify-content-between align-items-center"
+        >
+          <small class="text-muted"
+            >© <span id="year"></span> LAVO Laundry. All rights reserved.</small
+          >
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="footer-social" aria-label="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="footer-social" aria-label="Twitter"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LAVO Laundry - Kontak</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">LAVO Laundry</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog.html">Katalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bayar.html">Bayar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+
+          <a href="bayar.html" class="btn btn-outline-light ms-lg-3"
+            >Order Sekarang</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="py-5">
+        <div class="container py-4">
+          <h1 class="fw-bold">Kontak Kami</h1>
+          <p class="text-muted mt-2" style="max-width: 720px">
+            Butuh bantuan memilih paket? Kirim pesan melalui form atau hubungi
+            kontak resmi.
+          </p>
+
+          <div class="row g-4 mt-4">
+            <div class="col-12 col-lg-5">
+              <div class="card card-feature p-4 h-100">
+                <h4 class="fw-bold">Info Layanan</h4>
+                <div class="mt-3 d-grid gap-3">
+                  <div class="d-flex gap-3">
+                    <div class="badge bg-dark-subtle text-dark border">WA</div>
+                    <div>
+                      <div class="fw-semibold">0812-xxxx-xxxx</div>
+                      <div class="text-muted small">Respon cepat (demo)</div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="badge bg-dark-subtle text-dark border">
+                      Email
+                    </div>
+                    <div>
+                      <div class="fw-semibold">hello@lavo-laundry.com</div>
+                      <div class="text-muted small">
+                        Untuk pertanyaan & kerja sama
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="badge bg-dark-subtle text-dark border">Jam</div>
+                    <div>
+                      <div class="fw-semibold">08.00 - 20.00</div>
+                      <div class="text-muted small">Senin - Minggu</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <div class="alert alert-light mb-0" role="alert">
+                    <i class="bi bi-geo-alt me-2"></i>
+                    Area layanan: sesuai wilayah penjemputan (demo).
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <div class="card card-feature p-4">
+                <h4 class="fw-bold">Kirim Pesan</h4>
+                <form id="contactForm" class="mt-3">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                      <label class="form-label fw-semibold">Nama</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="nama"
+                        placeholder="Nama"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label fw-semibold">WhatsApp</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        name="wa"
+                        placeholder="08xxxxxxxx"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label fw-semibold">Pesan</label>
+                      <textarea
+                        class="form-control"
+                        name="pesan"
+                        rows="4"
+                        placeholder="Tulis pesan Anda"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary btn-lg" type="submit">
+                        Kirim Pesan
+                      </button>
+                    </div>
+                    <div class="col-12">
+                      <div
+                        id="contactResult"
+                        class="alert alert-success d-none"
+                        role="alert"
+                      ></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-5">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-2">LAVO Laundry</h5>
+            <p class="text-muted mb-0">
+              Laundry bersih, wangi, dan rapi untuk harian maupun instan.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h6 class="fw-bold">Menu</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="katalog.html" class="footer-link">Katalog</a></li>
+              <li><a href="bayar.html" class="footer-link">Bayar</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h6 class="fw-bold">Kontak</h6>
+            <p class="text-muted mb-1">
+              WhatsApp: <a href="#" class="footer-link">0812-xxxx-xxxx</a>
+            </p>
+            <p class="text-muted mb-0">
+              Email: <a href="#" class="footer-link">hello@lavo-laundry.com</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mt-4 mb-3" />
+        <div
+          class="d-flex flex-column flex-md-row gap-2 justify-content-between align-items-center"
+        >
+          <small class="text-muted"
+            >© <span id="year"></span> LAVO Laundry. All rights reserved.</small
+          >
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="footer-social" aria-label="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="footer-social" aria-label="Twitter"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const fd = new FormData(form);
+        const nama = fd.get("nama");
+        const wa = fd.get("wa");
+        const pesan = fd.get("pesan");
+
+        const box = document.getElementById("contactResult");
+        box.classList.remove("d-none");
+        box.textContent = `Terima kasih ${nama}! Pesan Anda sudah tersimpan (simulasi). Kami akan menghubungi via ${wa}.`;
+        form.reset();
+        box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+    </script>
+  </body>
+</html>
